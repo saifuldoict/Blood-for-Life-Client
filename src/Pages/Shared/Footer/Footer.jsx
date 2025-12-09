@@ -32,7 +32,7 @@ function Footer() {
           </div>
           <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
             <p className="order-2 md:order-1 mt-8 md:mt-0">
-              &copy; All rights reserved LifeSync, 2024
+              &copy; All rights reserved BLood-for-Life, 2025
             </p>
             <div className="order-1 md:order-2">
               <span className="px-2">About us</span>

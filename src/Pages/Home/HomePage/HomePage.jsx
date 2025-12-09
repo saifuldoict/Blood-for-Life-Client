@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <Banner
-        title="Join the Life-Saving Cause"
+        title="Donate Blood, Save Lives"
         subtitle="Be a hero, donate blood today"
         image="https://i.postimg.cc/QN7b68ms/mt-1802-slider-img02.jpg"
         buttonText1="Join as a donor"
@@ -14,8 +14,8 @@ function HomePage() {
       />
       <BloodDonationFeatured />
       <ContactUs
-        contactNumber="01710101984"
-        emailAddress="asadulimran1999@gmail.com"
+        contactNumber="01745032466"
+        emailAddress="saifulnhk@gmail.com"
       />
     </>
   );
