@@ -3,10 +3,10 @@ import { FaHeartbeat, FaTint } from 'react-icons/fa';
 
 const BloodDonationFeatured = () => {
   return (
-    <section className="bg-blue-100 py-12 rounded-md">
+    <section className="bg-blue-200 py-12 rounded-md">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-blue-700">
+          <h2 className="text-3xl font-bold text-blue-00">
             Save Lives with Your Blood Donation
           </h2>
           <p className="text-blue-600 mt-4">

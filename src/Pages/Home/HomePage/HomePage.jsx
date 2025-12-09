@@ -1,6 +1,7 @@
 import Banner from '../../../components/Banner/Banner';
 import BloodDonationFeatured from '../../../components/BloodDonationFeatured/BloodDonationFeatured';
 import ContactUs from '../../../components/ContactUs/ContactUs';
+import hero from '../../../assets/images/hero.jpg';
 
 function HomePage() {
   return (
@@ -8,7 +9,7 @@ function HomePage() {
       <Banner
         title="Donate Blood, Save Lives"
         subtitle="Be a hero, donate blood today"
-        image="https://i.postimg.cc/QN7b68ms/mt-1802-slider-img02.jpg"
+        image={hero}
         buttonText1="Join as a donor"
         buttonText2="Search Donors"
       />
