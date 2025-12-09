@@ -15,11 +15,11 @@ function DonationRequest() {
   }, []);
 
   return (
-    <div className="my-18 lg:my-20">
+    <div className="my-10 lg:my-20">
       <h2 className="text-4xl lg:text-5xl font-semibold lg:font-bold text-center mb-4 lg:mb-6">
         Donation Request Page
       </h2>
-      <div className="overflow-hidden">
+      <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
           <thead>
