@@ -28,7 +28,7 @@ const SideBar = () => {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `https://life-sync-server.vercel.app/users/${user?.email}`
+        `http://localhost:3000/users/${user?.email}`
       );
       setUserData(data[0]);
     })();
