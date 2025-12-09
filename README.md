@@ -3,7 +3,8 @@
 ## Website Overview
 Blood Donation Application is designed to streamline the process of blood donation by connecting donors with those in need. The platform offers comprehensive management features for users and administrators, facilitating an efficient and user-friendly experience.
 
-**Live site URL**: https://fanciful-pika-0b39f8.netlify.app/
+**Live site URL**: https://fanciful-pika-0b39f8.netlify.app
+** Live Server Side URL: https://blood-for-life.vercel.app
 
 ### Admin Access
 - **Username**: saifalibengal@gmail.com
