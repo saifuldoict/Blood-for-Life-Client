@@ -13,7 +13,7 @@ function DonationRequestEdit() {
   useEffect(() => {
     (async () => {
       const response = await axios.get(
-        `http://localhost:3000/donation-requests/view-details/${_id}`
+        `https://blood-for-life.vercel.app/donation-requests/view-details/${_id}`
       );
       setDetailsData(response.data);
       setControl(!control);
@@ -77,7 +77,7 @@ function DonationRequestEdit() {
     };
     try {
       const res = await axios.patch(
-        `http://localhost:3000/donation-requests/edit/${_id}`,
+        `https://blood-for-life.vercel.app/donation-requests/edit/${_id}`,
         donationRequest
       );
       if (res.data.modifiedCount) {

@@ -64,7 +64,7 @@ function CreateDonationReq() {
     };
     try {
       const res = await axios.post(
-        'http://localhost:3000/donation-requests',
+        'https://blood-for-life.vercel.app/donation-requests',
         donationRequest
       );
       console.log(res);
@@ -80,7 +80,7 @@ function CreateDonationReq() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/users/${user?.email}`
+        `https://blood-for-life.vercel.app/users/${user?.email}`
       );
       setUserData(data[0]);
     })();

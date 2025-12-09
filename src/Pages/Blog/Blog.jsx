@@ -7,7 +7,7 @@ function Blog() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/blog-post/status`
+        `https://blood-for-life.vercel.app/blog-post/status`
       );
       setBlogPost(data);
     })();

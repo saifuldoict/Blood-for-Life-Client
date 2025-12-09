@@ -89,7 +89,7 @@ function SignUp() {
     };
     console.log(user);
     const { data } = await axios.post(
-      `http://localhost:3000/users`,
+      `https://blood-for-life.vercel.app/users`,
       user
     );
     console.log(data);

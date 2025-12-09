@@ -29,7 +29,7 @@ function SearchPage() {
   const handleSearch = async e => {
     e.preventDefault();
     const { data } = await axios.get(
-      'http://localhost:3000/donors',
+      'https://blood-for-life.vercel.app/donors',
       {
         params: {
           bloodGroup,

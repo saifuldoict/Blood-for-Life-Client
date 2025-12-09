@@ -28,7 +28,7 @@ const SideBar = () => {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/users/${user?.email}`
+        `https://blood-for-life.vercel.app/users/${user?.email}`
       );
       setUserData(data[0]);
     })();

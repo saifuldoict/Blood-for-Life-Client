@@ -16,7 +16,7 @@ function MyDonationReq() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/donation-requests/${user?.email}`
+        `https://blood-for-life.vercel.app/donation-requests/${user?.email}`
       );
       setMyDonationReq(data);
     })();
@@ -34,7 +34,7 @@ function MyDonationReq() {
     }).then(async result => {
       if (result.isConfirmed) {
         const response = await axios.delete(
-          `http://localhost:3000/donation-requests/${id}`
+          `https://blood-for-life.vercel.app/donation-requests/${id}`
         );
         if (response.data.deletedCount) {
           Swal.fire(

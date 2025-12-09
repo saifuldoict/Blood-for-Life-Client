@@ -9,7 +9,7 @@ const Funding = () => {
 
   useEffect(() => {
     const fetchFundings = async () => {
-      const response = await axios.get('http://localhost:3000/fundings');
+      const response = await axios.get('https://blood-for-life.vercel.app/fundings');
       setFundings(response.data);
     };
 

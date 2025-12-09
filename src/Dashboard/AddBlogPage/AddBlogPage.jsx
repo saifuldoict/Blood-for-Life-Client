@@ -41,7 +41,7 @@ function AddBlogPage() {
     };
     console.log(blogPost);
     const { data } = await axios.post(
-      `http://localhost:3000/blog-post`,
+      `https://blood-for-life.vercel.app/blog-post`,
       blogPost
     );
     console.log(data);

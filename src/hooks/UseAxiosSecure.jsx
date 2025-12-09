@@ -4,7 +4,7 @@ import axios from 'axios';
 // import { AuthContext } from '../Firebase/AuthProvider';
 
 const axiosSecure = axios.create({
-  baseURL: 'https://bistro-boss-server-seven-sage.vercel.app',
+  baseURL: 'http://localhost:3000',
 });
 const useAxiosSecure = () => {
   // const navigate = useNavigate();

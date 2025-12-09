@@ -8,7 +8,7 @@ function DonationRequest() {
     (async () => {
       const status = 'pending';
       const { data } = await axios.get(
-        `http://localhost:3000/donation-requests/home/${status}`
+        `https://blood-for-life.vercel.app/donation-requests/home/${status}`
       );
       setDonationRequest(data);
     })();

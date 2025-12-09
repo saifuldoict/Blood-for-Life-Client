@@ -12,7 +12,7 @@ const AdminAnalysis = () => {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/users`
+        `https://blood-for-life.vercel.app/users`
       );
       console.log(data[0]?.role);
       const filterUser = data.filter(item => item.role === 'donor');
@@ -23,7 +23,7 @@ const AdminAnalysis = () => {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        'http://localhost:3000/donation-requests'
+        'https://blood-for-life.vercel.app/donation-requests'
       );
       setMyDonationReq(data);
     })();

@@ -16,7 +16,7 @@ function Board() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/users/${user?.email}`
+        `https://blood-for-life.vercel.app/users/${user?.email}`
       );
       setUserData(data[0]);
     })();
@@ -24,7 +24,7 @@ function Board() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/donation-requests/${user?.email}`
+        `https://blood-for-life.vercel.app/donation-requests/${user?.email}`
       );
       setRealData(data);
       const filteredData = data.slice(0, 3);
@@ -34,7 +34,7 @@ function Board() {
 
   const handleDone = async id => {
     const response = await axios.patch(
-      `http://localhost:3000/donation-requests/done/${id}`
+      `https://blood-for-life.vercel.app/donation-requests/done/${id}`
     );
     if (response.data.modifiedCount) {
       Swal.fire('Successful updated Status to Done');
@@ -43,7 +43,7 @@ function Board() {
   };
   const handleCancel = async id => {
     const response = await axios.patch(
-      `http://localhost:3000/donation-requests/cancel/${id}`
+      `https://blood-for-life.vercel.app/donation-requests/cancel/${id}`
     );
     if (response.data.modifiedCount) {
       Swal.fire('Successful Cancel Request');
@@ -62,7 +62,7 @@ function Board() {
     }).then(async result => {
       if (result.isConfirmed) {
         const response = await axios.delete(
-          `http://localhost:3000/donation-requests/${id}`
+          `https://blood-for-life.vercel.app/donation-requests/${id}`
         );
         if (response.data.deletedCount) {
           Swal.fire('Successful Deleted Request');
