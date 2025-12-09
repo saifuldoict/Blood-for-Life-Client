@@ -4,7 +4,7 @@ import axios from 'axios';
 // import { AuthContext } from '../Firebase/AuthProvider';
 
 const axiosSecure = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'http://localhost:3000'
 });
 const useAxiosSecure = () => {
   // const navigate = useNavigate();
