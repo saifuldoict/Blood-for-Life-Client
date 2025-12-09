@@ -19,39 +19,20 @@ function DonationRequest() {
       <h2 className="text-4xl lg:text-5xl font-semibold lg:font-bold text-center mb-4 lg:mb-6">
         Donation Request Page
       </h2>
-      <div className="overflow-x-auto">
-        <table className="table">
-          {/* head */}
-          <thead>
-            <tr>
-              <th></th>
-              <th>Recipient Name</th>
-              <th>Location</th>
-              <th>Data</th>
-              <th>Time</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            {donationRequest.map((donation, index) => (
-              <tr key={donation?._id} className="bg-base-200">
-                <th>{index + 1}</th>
-                <td>{donation?.recipientName}</td>
-                <td>
-                  {donation?.recipientUpazila}, {donation?.recipientDistrict}
-                </td>
-                <td>{donation?.donationDate}</td>
-                <td>{donation?.donationTime}</td>
-                <td>
-                  <Link to={`/view-details/${donation?._id}`}>
-                    <button className="btn btn-success">View Details</button>
-                  </Link>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <div className="flex justify-center items-center min-h-screen px-4">
+  <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm sm:max-w-md md:max-w-lg">
+    <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+
+    <p className="text-gray-700 mb-2">
+      <span className="font-semibold">Phone:</span> {contactNumber}
+    </p>
+
+    <p className="text-gray-700 mb-2">
+      <span className="font-semibold">District:</span> {district}
+    </p>
+  </div>
+</div>
+
     </div>
   );
 }
