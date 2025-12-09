@@ -21,10 +21,10 @@ function NavBar() {
     <nav className="bg-white border-gray-200 py-2.5">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         <Link to="/" className="flex items-center">
-          <img src={logo} className="w-24" alt="LifeSync Logo" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            <h2 className="text-black text-3xl lg:text-4xl font-semibold lg:font-bold">
-              Life<span className="text-blue-500">S</span>ync
+          <img src={logo} className="w-24" alt=" Logo" />
+          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">
+            <h2 className="text-red-700 text-2xl lg:text-3xl font-semibold lg:font-bold">
+              Blood <span className="text-blue-500">for Life</span> 
             </h2>
           </span>
         </Link>

@@ -111,7 +111,7 @@ function SignUp() {
   return (
     <>
       <Helmet>
-        <title>Life Sync | Sign Up</title>
+        <title>Blood-for-Life | Sign Up</title>
       </Helmet>
       <div className="my-8 lg:my-12">
         <section className="bg-white">

@@ -29,15 +29,18 @@ function SignIn() {
   };
   return (
     <div className="my-10">
+      
       <Helmet>
-        <title>Life Sync | Sign In</title>
+        <title>Blood-for-Life | Sign In</title>
       </Helmet>
       <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md ">
         <div className="flex justify-center mx-auto">
           <img className="w-32" src={logo} alt="" />
+          
         </div>
 
         <form onSubmit={handleLogin} className="mt-6">
+          
           <div>
             <label htmlFor="Email" className="block text-sm text-black">
               Email
