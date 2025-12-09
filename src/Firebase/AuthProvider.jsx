@@ -34,17 +34,30 @@ function AuthProvider({ children }) {
   };
 
   //logOut
-  const logOut = async () => {
-    const { data } = await axios(
-      `https://hotel-hive-server.vercel.app/logout`,
-      { withCredentials: true }
-    );
-    console.log(data);
-    signOut(auth).then(() => {
-      setUser(null);
-      toast.success('Successfully Logged Out');
-    });
-  };
+  // const logOut = async () => {
+  //   const { data } = await axios(
+  //     `https://hotel-hive-server.vercel.app/logout`,
+  //     { withCredentials: true }
+  //   );
+  //   console.log(data);
+  //   signOut(auth).then(() => {
+  //     setUser(null);
+  //     toast.success('Successfully Logged Out');
+  //   });
+  // };
+const logOut = async () => {
+  try{
+    await signOut(auth);
+    setUser(null);
+    toast.success('Successfully Logged Out');
+  } catch (error) {
+    console.error('Error logging out:', error);
+  }
+}
+   
+
+
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {

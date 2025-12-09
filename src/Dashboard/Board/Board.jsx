@@ -12,6 +12,7 @@ function Board() {
   const [control, setControl] = useState(false);
   const [myDonationReq, setMyDonationReq] = useState([]);
   const navigate = useNavigate();
+
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(
@@ -76,7 +77,7 @@ function Board() {
   return (
     <div>
       <h2 className="text-3xl font-bold m-6 md:m-10 text-center">
-        Hello {userData?.name}. Welcome to LifeSync
+        Hello {userData?.name}. Welcome Blood Donation Dashboard
       </h2>
       {userData?.role === 'donor' && (
         <>

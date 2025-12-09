@@ -48,14 +48,14 @@ const AdminAnalysis = () => {
           <h2 className="text-xl font-semibold text-center">Total Funding</h2>
           <p className="text-center text-green-700">50,000</p>
         </div>
-        <div className="bg-yellow-100 shadow-md p-6 rounded-lg">
+        <div className="bg-blue-200 shadow-md p-6 rounded-lg">
           <div className="flex justify-center">
-            <MdBloodtype className="text-8xl text-yellow-500" />
+            <MdBloodtype className="text-8xl text-red-500" />
           </div>
           <h2 className="text-xl font-semibold text-center">
             Total Blood Donation Request
           </h2>
-          <p className="text-center text-yellow-700">{myDonationReq?.length}</p>
+          <p className="text-center text-black">{myDonationReq?.length}</p>
         </div>
       </div>
     </div>
