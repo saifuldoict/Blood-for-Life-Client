@@ -6,7 +6,7 @@ const ContactUs = ({ contactNumber, emailAddress }) => {
         <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center">Get in Touch</h3>
             <form className="space-y-4">
               <div>
                 <label
@@ -55,8 +55,8 @@ const ContactUs = ({ contactNumber, emailAddress }) => {
               </button>
             </form>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+          <div className="bg-white p-10 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 text-center mt-3">Contact Information</h3>
             <p className="text-gray-700 mb-2">
               <span className="font-semibold">Phone:</span> {contactNumber}
             </p>
@@ -64,7 +64,7 @@ const ContactUs = ({ contactNumber, emailAddress }) => {
               <span className="font-semibold">Email:</span> {emailAddress}
             </p>
             <p className="text-gray-700 mb-2">
-              <span className="font-semibold">Address:</span> Shantikunjo , Tangail 1920,
+              <span className="font-semibold">Address:</span> Meherpur , Meherpur, Sadar 7100,
               Bangladesh
             </p>
           </div>
