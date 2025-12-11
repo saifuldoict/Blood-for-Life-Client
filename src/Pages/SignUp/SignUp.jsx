@@ -106,14 +106,7 @@ function SignUp() {
         .catch(error => console.log(error.message));
 
     }
-    // If backend sends 400 → user exists
-  if (err.response && err.response.status === 400) {
-    toast.error(err.response.data.message || 'User already exists');
-    setError(err.response.data.message);
-  } else {
-    toast.error('Something went wrong');
-    console.log(err);
-  }
+    
   };
 
   return (
