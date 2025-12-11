@@ -87,12 +87,11 @@ function SignUp() {
       role: 'donor',
       status: 'active',
     };
-    console.log(user);
+ 
     const { data } = await axios.post(
       `https://blood-for-life.vercel.app/users`,
       user
     );
-    console.log(data);
     if (data.insertedId) {
       createUser(email, password)
         .then(result => {
@@ -105,7 +104,16 @@ function SignUp() {
             .catch(err => console.log(err));
         })
         .catch(error => console.log(error.message));
+
     }
+    // If backend sends 400 → user exists
+  if (err.response && err.response.status === 400) {
+    toast.error(err.response.data.message || 'User already exists');
+    setError(err.response.data.message);
+  } else {
+    toast.error('Something went wrong');
+    console.log(err);
+  }
   };
 
   return (
