@@ -74,10 +74,7 @@ function SignUp() {
     } catch (error) {
       console.log(error.message);
     }
- if(!firebaseUser?.email){
-      toast.error('Failed to create user. Please try again.');
-      return;
-    }
+
     const user = {
       name,
       email,
